@@ -1,0 +1,409 @@
+/*font-family: 'Montserrat', sans-serif;*/
+/*font-family: 'Allerta', sans-serif;*/
+
+/*{/*se le asigna modelo de caja a todos los elementos*/
+	/*padding:10px;
+	/*width: tamaño;*/
+	/*height: tamaño;*/
+	/*border: 2px solid red;
+	/*padding-top: 10px;
+	padding-left: 15px;
+	padding-right: 13px;
+	padding-bottom: 5px; abajo se pone como el reloj*/
+	/*padding: 10px 13px 5px 15px;*/
+	/*margin:10px;
+}*/
+
+
+
+
+body{ /*por ser padre de etiquetas lleva las fuentes*/
+	font-family: 'Allerta', sans-serif;
+	margin:0;
+}
+
+table{
+	width: 100%;
+}
+
+th{ /*color a los encabezados*/
+	background: #273b47;
+	color: white;
+}
+
+th{ /*margenes del contenido de las cabezeras*/
+	padding: 10px 20px;
+	text-align: left;/*texto de encabezados alinedo a la derecha*/
+}
+
+td{ /*contenid centrado*/
+	padding: 20px;
+}
+
+table,th,td{ /*trazado de la tabla*/
+	border: 1px  solid #273b47;
+	border-collapse: collapse; /*quita alineado doble*/
+}
+
+input,textarea{
+	outline: 0;/*se quita el resaltado del textbox*/
+}
+
+input:focus,textarea:focus{ /*pseudoClases*/
+	background: lightgray;
+}
+
+
+
+
+
+.contenedor-img div{
+	margin-left: 70px;
+	margin-top: -10px;
+}
+
+.contenedor-img img{
+	border-radius: 10px;
+	border-color: #F0FFF0;
+}
+
+.subtitulo h2{
+ text-align: center;
+}
+
+
+.contenedor-block{
+	display: flex;
+   flex-wrap: nowrap;
+}
+
+.contenedor-img{
+	display: flex;
+   flex-wrap: nowrap;
+}
+
+.contenedor-block div{
+	background: #ADFF2F;
+	border-radius: 20px;
+	padding: 20px; /*margen interior*/
+	font-size: 14px;
+	text-decoration: none;
+	margin-top: 10px;
+	cursor: pointer;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
+
+
+
+
+.menu-bar{
+	border-radius: 12px; /*se perosnaliza el boton*/
+	background: none;
+	color: white; /*color del contenido*/
+	border:none;
+	padding: 7px; /*margen interior*/
+	font-size: 18px;
+	text-decoration: none;
+	margin-top: -10px;
+	cursor: pointer;
+}
+
+.contenedor{ /*se invoca en el html al lado del nombre de las class*/
+	width: 800px;
+	margin: auto;
+	position: relative;
+}
+
+.background{
+	background: url('../images/background.png');
+	background-size: cover;/*la imagen de la portada se amplia*/
+}
+
+.button{
+	border-radius: 12px; /*se perosnaliza el boton*/
+	background: #00FF00;
+	color: white; /*color del contenido*/
+	border:none;
+	padding: 7px; /*margen interior*/
+	font-size: 18px;
+	text-decoration: none;
+	margin-top: -30px;
+	cursor: pointer;/*al señalar el boton se pone una mano*/
+	/*background: linear-gradient(to left,#fe344e,#ff7250);*//*degradaod del boton*/
+	/*background: #ffb76b;*/
+/*background: -moz-linear-gradient(top, #ffb76b 0%, #ffa73d 50%, #ff7c00 51%, #ff7f04 100%);
+background: -webkit-linear-gradient(top, #ffb76b 0%,#ffa73d 50%,#ff7c00 51%,#ff7f04 100%);
+background: linear-gradient(to bottom, #ffb76b 0%,#ffa73d 50%,#ff7c00 51%,#ff7f04 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76b', endColorstr='#ff7f04',GradientType=0 );*/
+}
+
+.titulo{
+	font-size: 70px;
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 0;
+}
+
+.title-a{
+	font-size: 24px;
+	font-family: 'Montserrat', sans-serif;
+	
+}
+
+.titulo span{
+	text-decoration: underline;
+}
+
+.title-b{
+	font-size: 50px;
+	margin-bottom: 20px;
+	margin-top: 80px;
+
+}
+
+.guitarras{
+	color:#1F313C;
+	/*width: 1000px;
+	margin: auto; se resume en contenedor*/
+	margin-bottom: 60px ;/*magenees entre el footer y las guitarras*/
+	/*el important funciona en casi de que otros elementos interfieran en los margenes*/
+	/*´porque se declaro un elmento antes de este que es el que interfiere*/
+}
+
+
+.guitarras h2{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 35px;
+
+}
+
+.portada{
+	background: url('../images/background.png');
+	background-size: 1200px 800px;/*la imagen de la portada se amplia*/
+	color:white; /*items de la portada*/
+	padding:20px;/*centra el contenido de la portadA*/
+	
+	height: 500px;
+	/*width: 1000px;
+	margin: auto;*/ /**se resume en contenedor*/
+}/*../ se sale de la carpeta*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*mio*/
+header label{
+	float: right;
+	font-size: 28px;
+	margin: 6px 0;
+	cursor: pointer;
+}
+.menu a:hover{
+	background: rgba(255,255,255,0.2);
+}
+
+#menu-bar:checked ~ .menu{
+	transform: translateX(0%)
+}
+
+.menu{
+	font-size: 24px;
+	display: inline-block; 
+	position: absolute;
+	right: 0;
+}
+
+.menu a{
+	color: white;
+	text-decoration: none;
+
+}
+
+.menu li{
+	display: inline-block;
+	margin-left: 30px;
+}
+
+.menu li:before{ /
+font-size: 50px;
+line-height: 20px;
+color: white;
+}
+
+
+
+
+
+
+.logotipo{
+	display: inline-block;
+	margin-left: 0;
+	margin-top: -20px;
+}
+
+
+
+
+
+.portada button{
+	margin-bottom: 70px;
+}
+
+/*.header{ se resume en contenedor
+	width: 1000px;
+	margin: auto;
+}*/
+
+
+
+.guitarra{
+	margin:10px;
+	padding:10px;
+	/*overflow: hidden;*//*se comenta para que la img no se recorte*/
+	border:1px solid #1F313C;
+	border-radius: 8px;/*redondea las puntas*/
+	margin:10px 10px 40px 10px;/*separacion entre los bordes entre las guitarras*/
+}
+
+.guitarra ol{
+	padding: 0;
+}
+
+.guitarra.b{/*hay 2 etiquetas , si se quiere modificar los se ponen pegados*/
+	height: 190px;
+}
+
+.right{ /*MOVILIDAD libre de los img*/
+	float:right;
+	position: relative;
+	top: -5px; /*se unica la imagen a nuestro gusto*/
+
+
+}
+
+.left{
+	float:left;
+	/*top:80px;*/
+	position: relative;
+}
+
+.contenedor-guitarra-a{
+	padding-left: 20px;
+	margin-top: 10px;
+}
+
+.contenedor-guitarra-b{
+	margin-left: 370px;
+	position: relative; /*centrando el contenido en la caja*/
+	bottom: 90px; /*no se incluye  la imagen*/
+}
+
+.header{
+	position: relative;/*evita que se desborde el menu*/
+}
+
+.footer{
+	background: #000000;
+	padding:50px 10px; /*centrando contenido*/
+	margin-top: 100px;
+
+
+}
+
+.contacto img{
+	display: block;
+}
+
+.contacto strong{
+	display: block;
+}
+
+.contacto a{
+	color: white;
+	text-decoration: none;
+	margin: 10px 10px 10px 0;/*separacion entre el logo y el contenido de contacto*/
+}
+
+.footer .contenedor{/*uso de flexbox en el footer*/
+	display: flex; /*se ponen los elementos uno al lado del otro*/
+	justify-content: space-between;/*espacio amplio entre los 2 div*/
+
+
+}
+
+.footer .logoWhite{/*uso de flexbox en el footer*/
+	
+	width:128px;
+	height: 128px;
+	border-radius: 100px;
+	margin-right: 20px;
+}
+
+
+
+.contacto{
+	display: flex; /*separa logo de contacto*/
+	width: 300px; /*amolda el ancho*/
+	flex-wrap: wrap; /*elementos de bajo del otro*/
+	align-items: flex-start; /*hace que los items no se distorsionen*/
+}                           /*logo,checkbox*/
+
+.formulario{
+	display: flex; /*columnas se alinean al mismo nivel*/
+	width: 400px;
+	color: white;
+	/*padding: 50px 10px;*/ /*centra el contenido del footer*/
+	/*se quito este padding porque lo deberia tener el footer*/
+}
+
+.col1,.col2{
+	display: flex;
+	flex-direction: column; /*acomodo las col de los formularios*/
+	                        /*uno al lado del otro*/
+}
+
+.col1{
+	margin-right: 15px;
+}
+.col2{
+	margin-left: 15px;
+	align-items: flex-start; /*acomdoo el titulo y boton de comments*/
+
+}
+
+.col2 .button{
+	margin-top: 15px;
+}
+
+.intereses label{
+	font-size: 12px;
+}
+
+.formulario label,.sexo,.intereses{
+	margin-bottom: 10px;
+}
+
+.sexo{
+	margin-top: 10px;
+}
+/*estilos de la tabla*/
+ .tabla{
+ 	margin:50px 0;
+ }

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es"> 
+  <head>
+    <meta charset="utf-8" />
+    <title>Precios tus mejores guitarras!</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/invie.css">
+  </head>
+  <body>
+  	  <header id="header" class="header contenedor">  <!-- header -->
+     
+    <figure class="logotipo">  <!--logotipo-->
+      <img src="images/invie.png" width="186" height="60" alt="logo de la pagina" />
+    </figure>
+    <nav class="menu"> <!--menu-->
+      <ul> <!--lista desordenada-->
+        <li>  <!--item de la lista-->
+          <a href="index.html"> <!--vinculo-->
+            home
+          </a>
+          </li> 
+         <li>  <!--item de la lista-->
+          <a href="#guitarras"> <!--vinculo-->
+            guitarras
+          </a>   
+        </li> 
+        <li>  <!--item de la lista-->
+          <a href="precios.html"> <!--vinculo-->
+            precios
+          </a> 
+        </li> 
+      </ul>
+    </nav> 
+    </header>
+     <footer class="footer">
+      <div class="contenedor"> <!--da un orden geometrico-->
+        <div class="contacto">
+          <img src="images/invie-white.png" alt="logotipoBlanco"><!--logotipo-->
+          <a href="tel:+584149191636"><strong>telefono</strong><span>302345222</span></a>
+          <a href="mailto:contacto@invie.com"><strong>E-mail</strong><span>contacto@invie.com</span></a>
+        </div>
+        <form class="formulario">
+         <div class="col1"> <!--columna1 del footer-->
+          <label for="nombre">Nombre</label>
+          <input type="text" required id="nombre" name="name" /><!--formulario-->
+          <label for="email">E-mail</label>
+          <input type="email" required id="email" name="email">
+          <label for="mujer">
+            <div class="sexo">
+            <input type="radio" checked id="mujer" name="sexo" value="mujer">Mujer
+          </label>
+          <label for="hombre">
+            <input type="radio"  id="hombre" name="sexo" value="hombre">Hombre
+          </label>
+          </div>
+          <div class="intereses">
+            <label for="cotizacion">
+          <input type="checkbox" name="intereses" id="cotizacion" value="cotizacion"> cotizacion
+            </label>
+             <label for="reclamos">
+          <input type="checkbox" name="intereses" id="reclamos" value="reclamos"> reclamos
+            </label>
+             <label for="comentarios">
+          <input type="checkbox" name="intereses" id="comentarios" value="comentarios"> comentarios
+            </label>
+             <label for="otros">
+          <input type="checkbox" name="intereses" id="otros" value="otros"> otros
+            </label>
+          </div>
+          </div>
+          <div class="col2"> <!--columna 2 del footer-->
+            <label for="comentarios">
+              comentarios
+            </label>
+            <textarea name="comentarios" id="comentarios" cols="30" rows="7"></textarea>
+            <input type="submit" name="" value="enviar" class="button">
+          </div>
+        </form>
+      </div>
+        
+        
+      </footer>
+  </body>
+  </html>
